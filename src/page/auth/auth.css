@@ -1,0 +1,29 @@
+.auth-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0 300px;
+    background: yellowgreen;
+    height: 100vh;
+}
+.auth-container>img{
+    width: 30vw;
+}
+@media screen and (max-width:1200px){
+    .auth-container{
+        /* flex-direction: column; */
+       padding: 0 100px;
+    }
+    .auth-container>img{
+    width: 30vw;
+}
+}
+@media screen and (max-width:800px){
+    .auth-container{
+        flex-direction: column;
+    }
+    .auth-container>img{
+    /* width: 0vw; */
+}
+}

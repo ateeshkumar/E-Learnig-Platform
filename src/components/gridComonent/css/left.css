@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:ital,wght@1,300&family=Lugrasimo&family=Montserrat:wght@300;400;500;900&family=Noto+Sans&family=Pacifico&family=Playfair+Display:ital,wght@1,500&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,900&family=Ubuntu:wght@500&display=swap');
+.body-left{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 20px; */
+    height: 85vh;
+    overflow-y: scroll;
+    background: #000000;
+}
+.body-left::-webkit-scrollbar{
+    display: none;
+}
+.left-link{
+    align-items: start;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: #fff;
+    
+    /* border-bottom: 1px solid red; */
+    display: block;
+    font-family: 'Caprasimo', cursive;
+    padding: 10px;
+}
+.left-link:hover{
+    background: #ff0000;
+    border-radius: 20px;
+    color: #000000;
+}
+.nav-btn1 {
+    position: absolute;
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: red;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 40px;
+    top: 100px;
+    left: 0;
+  }
+  @media only screen and (max-width: 1024px) {
+    .nav-btn1 {
+      visibility: visible;
+      opacity: 1;
+    }
+    .body-left {
+      position: fixed;
+      /* top: -100vh; */
+      /* right: 100vw; */
+      /* height: 50%; */
+      /* width: 50%; */
+      /* display: flex;
+      flex-direction: column; */
+      /* align-items: center;
+      justify-content: center; */
+      /* gap: 1.5rem; */
+      background-color: #000000;
+      transition: 1s;
+      z-index: 1;
+      /* margin-bottom: 20px; */
+    }
+    .nav-last{
+      flex-direction: column;
+    }
+    .responsive_nav {
+      transform: translateX(-100vw);
+    }
+    .nav-close-btn1 {
+      position: absolute;
+      top: 1px;
+      left: 17rem;
+    }
+  }  

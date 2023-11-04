@@ -1,0 +1,35 @@
+--root{
+  --primary-color:#ffd700;
+}
+/*@import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss'; */
+/* @import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+.full-app{
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* max-width: 111.8rem; */
+}
+.loader-active{
+  display: block;
+  /* background: greenyellow; */
+  /* color: white; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,71 @@
+.p-header{
+    color: yellowgreen;
+    background: url('../../assets/project-back.mp4');
+    text-align: center;
+    height: 30vh;
+    h1{
+        margin: auto;
+    }
+}
+.p-bottom{
+    background: #060517;
+    padding: 40px;
+}
+.p-box-container{
+    background: #16c5ff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    border-radius: 25px;
+    padding: 40px;
+
+}
+.p-detail-box{
+    background: #060517;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 20px 30px;
+}
+.p-detail-box img{
+    width: 200px;
+    height: 150px;
+}
+.p-detail-box a{
+    padding: 10px;
+    background: greenyellow;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.p-detail-box>h3{
+    color: yellowgreen;
+}
+@media screen and (max-width: 500px) {
+    /* */
+    .p-bottom{
+        padding:10px 0;
+    }
+    /* .p-detail-box img{
+        width: 100px;
+        height: 60px;
+    } */
+}
+@media screen and (max-width: 376px) {
+    .p-detail-box img{
+        width: 150px;
+        height: 100px;
+    } 
+    .p-box-container{
+        margin: 0px 10px;
+    }
+}

@@ -1,0 +1,33 @@
+.mid-container{
+    display: flex;
+    flex-grow: 1;
+    /* justify-content: space-between; */
+    overflow-y: scroll;
+    height: 85vh;
+}
+.mid-container::-webkit-scrollbar{
+    display: none;
+}
+.cos-details{
+    padding-left: 30px;
+    width: 60%;
+}
+.details h4{
+    font-size: 20px;
+}
+.details p{
+    font-size: 20px;
+}
+.ad{
+    width: 40%;
+}
+@media screen and  (max-width:1500px){
+    .cos-details{
+        width: 90%;
+    }
+    .ad{
+        /* display: none; */
+        width: 0%;
+    }
+    
+}

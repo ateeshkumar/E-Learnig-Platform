@@ -1,0 +1,13 @@
+.tc-container{
+    margin: 0 20%;
+    font-size: 25px;
+}
+.tc-container>h6{
+    font-size: 30px;
+}
+@media screen and (max-width:800px){
+    .tc-container{
+        margin: 0 10px;
+        font-size: 18px;
+    }
+}
