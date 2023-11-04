@@ -80,10 +80,10 @@ const Navbar = () => {
             {" "}
             <Link to="/engineering/project">Project</Link>
           </li>
-          {/* <li>
+          <li>
             {" "}
-            <Link to="/kids/alphabate-learning">Kids</Link>
-          </li> */}
+            <Link to="/blogs">Blog</Link>
+          </li>
           { !auth?.user ? (
             <Link to="/login" className="login-link">
               Sign In/Sign Up

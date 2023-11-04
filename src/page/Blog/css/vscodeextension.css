@@ -1,0 +1,31 @@
+.vce-container{
+    padding: 0 20%;
+}
+.extension-container{
+    font-size: 20px;
+    /* text-align: center; */
+    border-bottom: 5px solid black;
+    margin-bottom: 15px;
+}
+.extension-container>h1{
+    text-align: center;
+    font-size: 30px;
+}
+.extension-container>a{
+    color: blue;
+}
+.extension-container>img{
+    width: 100%;
+}
+@media screen and (max-width:1000px){
+    .vce-container>img{
+        width: 90%;
+    }
+    
+
+}
+@media screen and (max-width:775px){
+    .vce-container{
+    padding: 0 5%;
+}
+}

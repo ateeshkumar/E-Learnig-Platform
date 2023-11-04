@@ -2,7 +2,7 @@ import React, { useEffect, useState} from 'react';
 import axios  from 'axios';
 import './css/midle.css';
 import CodeSnippit from '../CodeSnippit';
-import SquireAds from '../GoogleAds/SquireAds';
+import Horgontle from '../GoogleAds/Horgontle';
 
 const Midle = ({id,add,content}) => {
     const [idx, setidx] = useState(id);
@@ -44,7 +44,6 @@ const Midle = ({id,add,content}) => {
                   {item.code && <CodeSnippit type={add} code={item.code} />}
                   <p>{item.options}</p>
                   <p>{item.answer}</p>
-                  <SquireAds />
                 </div>
               ))
             ) : (

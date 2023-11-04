@@ -12,6 +12,8 @@ import Login from './page/auth/Login';
 import LayoutContent from './components/gridComonent/LayoutContent';
 import PrivacyPolicy from './page/PrivacyPolicy';
 import TearmCondition from './page/TearmCondition';
+import VsCodeExtension from './page/Blog/VsCodeExtension';
+import Blog from './page/Blog';
 
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
         <Route path='/term-condition' element={<TearmCondition/>}/>
+        <Route path='/blogs' element={<Blog/>}/>
+        <Route path='blogs/vs-code-extensions-for-developers' element={<VsCodeExtension/>}/>
         <Route path="/courses" element={<Courses />} />
         <Route path="/engineering/project" element={<Project />} />
         <Route path='/:add/:id' element={<LayoutContent/>}/>
