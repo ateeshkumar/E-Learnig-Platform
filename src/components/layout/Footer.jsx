@@ -26,7 +26,7 @@ const Footer = () => {
      e.preventDefault();
      try {
        const { data } = axios.post(
-         "https://alphapartical-api-v2.onrender.com/api/v1/content/subscribe",
+         "https://alphapartical-api-v2-l7kz.onrender.com/api/v1/content/subscribe",
          {
            email: input.email,
          }
@@ -75,14 +75,14 @@ const Footer = () => {
               </p>
             </div>
             <div className="up-2">
-              <a href="">HTML</a>
+              <a href="/html/1">HTML</a>
               <a href="">CSS</a>
               <a href="">JavaScript</a>
               <a href="">DSA</a>
             </div>
             <div className="up-3">
-              <a href="">Term and Conditions</a>
-              <a href="">Privacy Policy</a>
+              <a href="/term-condition">Term and Conditions</a>
+              <a href="/privacy-policy">Privacy Policy</a>
               <a href="">Cookie Policy</a>
             </div>
             <div className="up-4">

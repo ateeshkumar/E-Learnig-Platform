@@ -1,0 +1,33 @@
+.create-project{
+    display: flex;
+    flex-direction: column;
+}
+.create-project>input{
+    border: none;
+    background: transparent;
+    border: 2px solid #fff;
+    height: 50px;
+    width: 600px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+}
+.create-project>textarea{
+    border: none;
+    background: transparent;
+    border: 2px solid #fff;
+    height: 50px;
+    width: 600px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px;
+}
+.create-project>input[type=submit]{
+    background: yellowgreen;
+    color: black;
+    cursor: pointer;
+}

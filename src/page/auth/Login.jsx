@@ -24,7 +24,7 @@ const Login = () => {
       e.preventDefault();
       try {
         const { data } = await axios.post(
-          "https://alphapartical-api-v2.onrender.com/api/v1/user/login",
+          "https://alphapartical-api-v2-l7kz.onrender.com/api/v1/user/login",
           {
             email: input.email,
             password: input.password,

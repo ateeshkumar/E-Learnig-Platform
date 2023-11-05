@@ -13,7 +13,7 @@ const LayoutContent = () => {
      const getAllConent = async (add) => {
        try {
          const { data } = await axios.get(
-           `https://alphapartical-api-v2.onrender.com/api/v1/content/get-${add}`
+           `https://alphapartical-api-v2-l7kz.onrender.com/api/v1/content/get-${add}`
          );
          if (data?.success) {
            setContent(data?.content);

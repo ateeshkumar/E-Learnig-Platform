@@ -34,7 +34,6 @@ const Blog = () => {
           </div>
         </div>
       </Layout>
-      Blog
     </>
   );
 }

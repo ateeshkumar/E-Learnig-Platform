@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './css/navbar.css';
 import logo from '../../assets/logo.png';
 import { Link, useNavigate} from 'react-router-dom';
@@ -12,6 +12,7 @@ const Navbar = () => {
     const navigate = useNavigate();
     const navref = useRef();
     const [auth,setAuth] = useAuth();
+    const [dashboard,setDashboard] = useState('')
     const handleLogout = () => {
       setAuth({
         ...auth,
@@ -25,6 +26,13 @@ const Navbar = () => {
     const showNavbar = () => {
       navref.current.classList.toggle("responsive_nav");
     };
+    useEffect(()=>{
+      if(auth?.user?.role===1){
+        setDashboard('admin')
+      }else{
+        setDashboard('user')
+      }
+    })
   return (
     <>
       <div className="nav-container">
@@ -83,6 +91,10 @@ const Navbar = () => {
           <li>
             {" "}
             <Link to="/blogs">Blog</Link>
+          </li>
+          <li>
+            {" "}
+            <Link to={`/dashboard/${dashboard}`}>Dashboard</Link>
           </li>
           { !auth?.user ? (
             <Link to="/login" className="login-link">

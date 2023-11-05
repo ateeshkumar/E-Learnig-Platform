@@ -10,7 +10,11 @@ const Register = () => {
     const [input, setinput] = useState({
       name: "",
       email: "",
+      phone:"",
+      gender:"",
+      college:"",
       password: "",
+
     });
     const handleChange = (e) => {
       setinput((prevState) => ({
@@ -23,10 +27,13 @@ const Register = () => {
       e.preventDefault();
       try {
         const { data } = await axios.post(
-          "https://alphapartical-api-v2.onrender.com/api/v1/user/register",
+          "https://alphapartical-api-v2-l7kz.onrender.com/api/v1/user/register",
           {
             name: input.name,
             email: input.email,
+            phone: input.phone,
+            gender: input.gender,
+            college: input.college,
             password: input.password,
           }
         );
@@ -57,7 +64,7 @@ const Register = () => {
             justifyContent={"center"}
             margin={"auto"}
             style={{ background: "#fff" }}
-            marginTop={5}
+            // marginTop={5}
             boxShadow="10px 10px 20px #ccc"
             padding={3}
             borderRadius={5}
@@ -67,23 +74,49 @@ const Register = () => {
               sx={{ textTransform: "upperCase" }}
               padding={3}
               textAlign={"center"}
+
             >
               Register
             </Typography>
+            
+              <TextField
+                placeholder="Name"
+                name="name"
+                value={input.name}
+                margin="normal"
+                type="text"
+                onChange={handleChange}
+              />
+              <TextField
+                placeholder="Email"
+                name="email"
+                value={input.email}
+                margin="normal"
+                type="email"
+                onChange={handleChange}
+              />
             <TextField
-              placeholder="Name"
-              name="name"
-              value={input.name}
+              placeholder="Phone No + Country Code"
+              name="phone"
+              value={input.phone}
               margin="normal"
-              type="text"
+              type="phone"
               onChange={handleChange}
             />
             <TextField
-              placeholder="Email"
-              name="email"
-              value={input.email}
+              placeholder="Gender"
+              name="gender"
+              value={input.gender}
               margin="normal"
-              type="email"
+              type="gender"
+              onChange={handleChange}
+            />
+            <TextField
+              placeholder="College Name"
+              name="college"
+              value={input.college}
+              margin="normal"
+              type="college"
               onChange={handleChange}
             />
             <TextField

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap');
+.community-header{
+    background-image: url('../../../assets/communityBackground.jpg');
+    background-repeat: no-repeat;
+    color: #fff;
+    background-size: cover;
+    padding: 70px 0;
+}
+.community-header>h1{
+    font-size: 87px;
+    text-shadow:5px 5px #d1cbcb;
+    /* margin: 20px 0; */
+}
+.community-details-container{
+    background: #060517;
+    height: 90vh;
+    display: flex;
+    padding: 25px;
+}
+.community-live-project{
+    background: #16c5ff;
+    width: 40%;
+    border-radius: 15px;
+    margin:10px;
+    overflow-y: scroll;
+}
+.community-live-project::-webkit-scrollbar{
+    display: none;
+}
+.community-history-project-details{
+    background: #16c5ff;
+    width: 60%;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 25px;
+    
+}
+
+/* .title-project{
+    position: sticky;
+} */
+.community-project-datails-container{
+    background: #060517;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    color: #fff;
+    height: 15%;
+    border-radius: 10px;
+}
+.community-project-datails-container>p{
+   margin: 25px;
+   font-weight: 600;
+   font-size: 20px;
+}
+.community-btn{
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    background: greenyellow;
+}
+.community-histrory-project{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto Slab', serif;
+    background: #060517;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 25px;
+}
+.community-histrory-project p{
+    /* color: #d1d1d1; */
+    margin: 10px;
+}

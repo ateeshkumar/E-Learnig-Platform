@@ -80,9 +80,12 @@ const Home = () => {
               </h1>
               {/* <Search /> */}
 
-              {/* <button onClick={() => navigate("/codeeditor")} className="btn">
-                <FaCode /> Coding Compiler
-              </button> */}
+              <button
+                onClick={() => navigate("/student/community")}
+                className="btn"
+              >
+                Join Our Community
+              </button>
             </div>
             {/* <div className="h-right">
             <div class="loader">

@@ -72,11 +72,11 @@ body.active-modal {
     border-radius: 5px;
     color: black;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
     border: 1px solid greenyellow;
     cursor: pointer;
     display: block;
-    width: 150px;
+    width: 250px;
     height: 40px;
     text-align: center;
     background: greenyellow;
