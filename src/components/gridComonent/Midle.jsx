@@ -4,6 +4,7 @@ import './css/midle.css';
 import CodeSnippit from '../CodeSnippit';
 import Horgontle from '../GoogleAds/Horgontle';
 import Loader from '../layout/Loader';
+import SimpleLoader from '../layout/SimpleLoader';
 
 const Midle = ({id,add,content}) => {
     const [idx, setidx] = useState(id);
@@ -48,7 +49,7 @@ const Midle = ({id,add,content}) => {
                 </div>
               ))
             ) : (
-              <h4><Loader/></h4>
+              <h4><SimpleLoader/></h4>
             )}
           </div>
         </div>

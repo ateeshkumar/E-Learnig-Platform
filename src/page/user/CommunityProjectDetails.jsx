@@ -1,13 +1,15 @@
 import React,{ useState } from 'react'
 import Layout from '../../components/layout/Layout'
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { TypeAnimation } from "react-type-animation";
 import axios from 'axios';
 import { useEffect } from 'react';
 import { useAuth } from '../../components/context/auth';
 import './css/communityprojectdetails.css';
+import { toast } from 'react-toastify';
 
 const CommunityProjectDetails = () => {
+  const navigate = useNavigate();
   const {slug} = useParams();
   const [auth,setAuth] = useAuth();
   const [projectd,setProjectd] = useState({});
@@ -17,6 +19,23 @@ const CommunityProjectDetails = () => {
     );
     if(data?.success){
       setProjectd(data.projects);
+    }
+  }
+  const JoinGroup = async(id)=>{
+    try {
+      const { data } = await axios.post(
+        `https://alphapartical-api-v2-l7kz.onrender.com/api/v1/auth/request-join/${id}`,
+        {userId:auth.user._id}
+      );
+      if(data?.success){
+        toast.success(data?.massage);
+        navigate('/dashboard/user');
+      }else{
+        toast.error(data?.massage);
+      }
+    } catch (error) {
+      console.log(error)
+      toast.error("Error in Requesting");
     }
   }
   useEffect(()=>{
@@ -47,6 +66,7 @@ const CommunityProjectDetails = () => {
           </div>
           <div className="community-history-project-details-1">
             <div className="community-histrory-project-1">
+              
               <p>
                 <b>Project Title: </b>
                 {projectd?.title}
@@ -79,7 +99,8 @@ const CommunityProjectDetails = () => {
                 <b>Project Mentor:</b> {projectd?.mentor?.name}
               </p>
               {auth?.token ? (
-                <button className="community-btn">
+                <button className="community-btn"
+                onClick={()=>JoinGroup(projectd?._id)}>
                   Join Project for Contribution
                 </button>
               ) : (

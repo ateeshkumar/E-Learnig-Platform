@@ -1,7 +1,7 @@
 .user-dashboard-container{
     display: flex;
     background: #060517;
-    height: 80vh;
+    /* height: 80vh; */
     padding: 30px 30px;
 }
 .user-dashboard-profile{
@@ -33,7 +33,23 @@
     border: 1px solid greenyellow;
     cursor: pointer;
     display: block;
-    width: 250px;
+    /* width: px; */
+    padding:0 30px;
+    height: 40px;
+    text-align: center;
+    background: greenyellow;
+}
+.project-btn{
+    text-decoration: none;
+    /* margin-top: 60px; */
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+    /* width: 250px; */
+    padding: 0px 20px;
     height: 40px;
     text-align: center;
     background: greenyellow;
@@ -49,4 +65,39 @@
     margin: 10px;
     border-radius: 15px;
     text-align: center;
+}
+.user-project-details{
+    display: flex;
+    justify-content: space-between;
+    background: #060517;
+    color: #fff;
+    font-weight: 700;
+    font-size: 120%;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 10px;
+    align-items: center;
+}
+.user-project-details>img{
+    width: 7%;
+
+}
+@media screen and (max-width:950px){
+    .user-dashboard-container{
+        flex-direction: column;
+    }
+    .user-activity-details{
+        width: 100%;
+    }
+    .user-dashboard-profile{
+        width: 100%;
+    }
+}
+@media screen and (max-width:790px){
+    .user-project-details{
+        flex-direction: column;
+    }
+    .user-project-details>img{
+        width: 15%;
+    }
 }

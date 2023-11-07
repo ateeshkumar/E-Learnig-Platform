@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useNavigate} from 'react-router-dom';
 import { useAuth } from '../../components/context/auth';
+import SimpleLoader from '../../components/layout/SimpleLoader';
 
 const OurCommunity = () => {
   const [projects,setProjects] = useState([]);
@@ -36,7 +37,7 @@ const OurCommunity = () => {
             wrapper="span"
             speed={150}
             style={{
-              fontSize: "87px",
+              fontSize: "67px",
               display: "inline-block",
               color: "#fff",
               textShadow: "5px 5px #d1cbcb",
@@ -48,21 +49,29 @@ const OurCommunity = () => {
         </div>
         <div className="community-details-container">
           <div className="community-live-project">
-           <h5>Google ads</h5>
+            <h5>Google ads</h5>
           </div>
           <div className="community-history-project-details">
-              {projects.map((item) => (
-                <div className="community-project-datails-container">
-                  <p>{item.title}</p>
-                  <p>{item.lable}</p>
-                  <button
-                    className="community-btn"
-                    onClick={() => navigate(`/student/community/${item.slug}`)}
-                  >
-                    Details
-                  </button>
-                </div>
-              ))}
+            {projects && projects.length > 0 ? (
+              <>
+                {projects.map((item) => (
+                  <div className="community-project-datails-container">
+                    <p>{item.title}</p>
+                    <p>{item.lable}</p>
+                    <button
+                      className="community-btn"
+                      onClick={() =>
+                        navigate(`/student/community/${item.slug}`)
+                      }
+                    >
+                      Details
+                    </button>
+                  </div>
+                ))}
+              </>
+            ) : (
+              <SimpleLoader />
+            )}
           </div>
         </div>
       </Layout>

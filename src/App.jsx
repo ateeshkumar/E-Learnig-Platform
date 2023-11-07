@@ -24,6 +24,7 @@ import AdminAllUser from './page/admin/AdminAllUser';
 import AdminProject from './page/admin/AdminProject';
 import AdminCreateProject from './page/admin/AdminCreateProject';
 import CommunityProjectDetails from './page/user/CommunityProjectDetails';
+import GroupProject from './page/user/GroupProject';
 
 
 function App() {
@@ -54,12 +55,16 @@ function App() {
           path="/courses/ethical-hacking/:id"
           element={<EthicalHacking />}
         />
-        <Route path="/student/community/:slug" element={<CommunityProjectDetails/>} />
+        <Route
+          path="/student/community/:slug"
+          element={<CommunityProjectDetails />}
+        />
         <Route path="/*" element={<PageNotFound />} />
 
         {/* User Private Route */}
         <Route path="/dashboard" element={<Privateroute />}>
           <Route path="user" element={<UserDashboard />} />
+          <Route path="user/group/:slug" element={<GroupProject/>} />
         </Route>
 
         {/* Admin Private Route  */}
@@ -67,7 +72,7 @@ function App() {
           <Route path="admin" element={<AdminDashboard />} />
           <Route path="admin/all-users" element={<AdminAllUser />} />
           <Route path="admin/project-details" element={<AdminProject />} />
-          <Route path="admin/create-project" element={<AdminCreateProject/>}/>
+          <Route path="admin/create-project" element={<AdminCreateProject />} />
         </Route>
       </Routes>
     </>
