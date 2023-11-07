@@ -1,17 +1,27 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Layout from '../../components/layout/Layout'
 import { toast } from 'react-toastify';
 import axios from 'axios';
-
+import './css/adminalluser.css'
+import { useNavigate } from 'react-router-dom';
 const AdminAllUser = () => {
+  const navigate = useNavigate();
   const [alluser ,setAlluser] = useState([]);
   const getAllUser= async()=>{
     try {
-      const {data} = await axios.get('')
+      const { data } = await axios.get(
+        "https://alphapartical-api-v2-l7kz.onrender.com/api/v1/user/all-user"
+      );
+      if(data.success){
+        setAlluser(data?.users)
+      }
     } catch (error) {
       toast.error('Something went wrong!!')
     }
   }
+  useEffect(()=>{
+    getAllUser()
+  },[])
   return (
     <>
       <Layout title="all-user">
@@ -39,9 +49,17 @@ const AdminAllUser = () => {
             </div>
           </div>
           <div className="admin-detail-section">
-            <div className="admin-details-section-container">
-              
-            </div>
+            {/* <div className="admin-details-section-container"> */}
+              {
+                alluser.map((item)=>(
+                  <div className="admin-user-details">
+                    <p>{item?.name}</p>
+                    <p>{item?.email}</p>
+                    <p>{item?.gender}</p>
+                  </div>
+                ))
+              }
+            {/* </div> */}
           </div>
         </div>
       </Layout>

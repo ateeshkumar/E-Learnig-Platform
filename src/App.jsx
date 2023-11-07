@@ -23,6 +23,7 @@ import OurCommunity from './page/user/OurCommunity';
 import AdminAllUser from './page/admin/AdminAllUser';
 import AdminProject from './page/admin/AdminProject';
 import AdminCreateProject from './page/admin/AdminCreateProject';
+import CommunityProjectDetails from './page/user/CommunityProjectDetails';
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
           path="/courses/ethical-hacking/:id"
           element={<EthicalHacking />}
         />
-        <Route path="/student/community/:slug" element={<OurCommunity />} />
+        <Route path="/student/community/:slug" element={<CommunityProjectDetails/>} />
         <Route path="/*" element={<PageNotFound />} />
 
         {/* User Private Route */}

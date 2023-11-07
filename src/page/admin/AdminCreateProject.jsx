@@ -9,17 +9,24 @@ import { useNavigate } from 'react-router-dom';
 const AdminCreateProject = () => {
   const [auth, setAuth] = useAuth();
     const navigate = useNavigate();
-    const [input, setInput] = useState({
-      logo: "",
-      title: "",
-      description: "",
-      lable: "",
-      github: "",
-      language: "",
-      skills: "",
-      guide: "",
-    });
+    // const [input, setInput] = useState({
+    //   logo: "",
+    //   title: "",
+    //   description: "",
+    //   lable: "",
+    //   github: "",
+    //   language: "",
+    //   skills: "",
+    //   guide: ""
+    // });
     const [logo,setLogo] = useState('');
+    const [title,setTitle] = useState('');
+    const [description, setDescription] = useState("");
+    const [lable, setLable] = useState("");
+    const [github, setGithub] = useState("");
+    const [language, setLanguage] = useState("");
+    const [skills, setSkills] = useState("");
+    const [guide, setGuide] = useState("");
 
     
     const handleSubmit = async(e)=>{
@@ -28,14 +35,14 @@ const AdminCreateProject = () => {
         const { data } = await axios.post(
           "https://alphapartical-api-v2-l7kz.onrender.com/api/v1/auth/create-project"
         ,{
-          logo:input.logo,
-          title:input.title,
-          description:input.description,
-          lable:input.lable,
-          github:input.github,
-          language:input.language,
-          skills:input.skills,
-          guide:input.guide,
+          logo:logo,
+          title:title,
+          description:description,
+          lable:lable,
+          github:github,
+          language:language,
+          skills:skills,
+          guide:guide,
           mentor:auth.user._id
         });
         if(data.success){
@@ -48,12 +55,7 @@ const AdminCreateProject = () => {
         toast.error('Something Went Wrong!!')
       }
     }
-    const handleChange = (e) => {
-      setInput({
-        ...input,
-        [e.target.name]: e.target.value,
-      });
-    };
+    
   return (
     <>
       <Layout title="create-project">
@@ -88,8 +90,14 @@ const AdminCreateProject = () => {
                   type="url"
                   placeholder="Project Logo"
                   value={logo}
-                  // onChange={handleChange}
-                  onChange={()=>setLogo(e.target.value)}
+                  onChange={(e) => setLogo(e.target.value)}
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Project Title"
+                  value={title}
+                  onChange={(e) => setTitle(e.target.value)}
                   required
                 />
 
@@ -97,39 +105,39 @@ const AdminCreateProject = () => {
                   name="text"
                   rows="5"
                   placeholder="Project Description"
-                  value={input.description}
-                  onChange={handleChange}
+                  value={description}
+                  onChange={(e) => setDescription(e.target.value)}
                   required
                 ></textarea>
                 <input
                   type="text"
                   placeholder="Project Level"
-                  value={input.lable}
-                  onChange={handleChange}
+                  value={lable}
+                  onChange={(e) => setLable(e.target.value)}
                   required
                 />
 
                 <input
                   type="text"
                   placeholder="Project Reposectory"
-                  value={input.github}
-                  onChange={handleChange}
+                  value={github}
+                  onChange={(e) => setGithub(e.target.value)}
                   required
                 />
 
                 <input
                   type="text"
                   placeholder="Coding Language"
-                  value={input.language}
-                  onChange={handleChange}
+                  value={language}
+                  onChange={(e) => setLanguage(e.target.value)}
                   required
                 />
 
                 <input
                   type="text"
                   placeholder="Project Need Skills"
-                  value={input.skills}
-                  onChange={handleChange}
+                  value={skills}
+                  onChange={(e) => setSkills(e.target.value)}
                   required
                 />
 
@@ -137,8 +145,8 @@ const AdminCreateProject = () => {
                   type="text"
                   rows="5"
                   placeholder="Project Guide"
-                  value={input.guide}
-                  onChange={handleChange}
+                  value={guide}
+                  onChange={(e) => setGuide(e.target.value)}
                   required
                 ></textarea>
                 <input type="submit" value="CREATE PROJECT" />

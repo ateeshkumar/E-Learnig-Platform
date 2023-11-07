@@ -1,0 +1,10 @@
+.admin-user-details{
+    background: #060517;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 30px;
+}

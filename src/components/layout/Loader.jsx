@@ -1,9 +1,8 @@
 import React,{ useEffect, useState} from "react";
 import { useLocation, useNavigate} from "react-router-dom";
 import { HashLoader } from "react-spinners";
-import Layout from "./Layout";
 
-const Loader = ({path='login'}) => {
+const Loader = ({path='/login'}) => {
     const [count,setCount] = useState(5);
     const navigate = useNavigate();
     const location = useLocation();
@@ -11,7 +10,7 @@ const Loader = ({path='login'}) => {
         const interval = setInterval(()=>{
             setCount(count=>--count);
         },1000);
-        count===0 && navigate(`/${path}`,
+        count == 0 && navigate(`/${path}`,
         {state: location.pathname,})
         return ()=> clearInterval(interval);
     },[count,navigate,location,path])

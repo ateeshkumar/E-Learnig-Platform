@@ -22,7 +22,7 @@ const AdminRoute = () => {
         };
         if (auth?.token) authCheck();
     },[])
-  return ok?<Outlet/>:<Loader path=' '/>
+  return ok?<Outlet/>:<Loader path=''/>
 }
 
 export default AdminRoute

@@ -1,0 +1,29 @@
+.admin-project-details{
+    background: #060517;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 30px;
+}
+.admin-project-details>span{
+    font-size: 20px;
+}
+.admin-project-btn{
+    text-decoration: none;
+    border-radius: 5px;
+    /* margin: 10px; */
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: 1px solid greenyellow;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    background: greenyellow;
+}

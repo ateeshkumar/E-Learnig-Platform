@@ -1,58 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap');
-.community-header{
+.community-header-1{
     background-image: url('../../../assets/communityBackground.jpg');
     background-repeat: no-repeat;
     color: #fff;
     background-size: cover;
     padding: 70px 0;
 }
-.community-header>h1{
+.community-header-1>h1{
     font-size: 87px;
     text-shadow:5px 5px #d1cbcb;
     /* margin: 20px 0; */
 }
-.community-details-container{
+.community-details-container-1{
     background: #060517;
-    height: 90vh;
     display: flex;
+    flex-direction: row-reverse;
     padding: 25px;
 }
-.community-live-project{
+.community-live-project-1{
     background: #16c5ff;
     width: 30%;
     border-radius: 15px;
     margin:10px;
 }
 
-.community-history-project-details{
+.community-history-project-details-1{
     background: #16c5ff;
     width: 70%;
     border-radius: 15px;
     margin: 10px;
     padding: 25px;
-    overflow-y: scroll;
+    
 }
-.community-history-project-details::-webkit-scrollbar{
-    display: none;
-}
+
 /* .title-project{
     position: sticky;
 } */
-.community-project-datails-container{
-    background: #060517;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin: 20px;
-    color: #fff;
-    height: 20%;
-    border-radius: 10px;
-}
-.community-project-datails-container>p{
-   margin: 25px;
-   font-weight: 600;
-   font-size: 20px;
-}
+
+
 .community-btn{
     text-decoration: none;
     border-radius: 5px;
@@ -68,8 +53,16 @@
     padding: 10px;
     background: greenyellow;
 }
-
-.community-histrory-project p{
+.community-histrory-project-1{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto Slab', serif;
+    background: #060517;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 25px;
+}
+.community-histrory-project-1 p{
     /* color: #d1d1d1; */
     margin: 10px;
 }

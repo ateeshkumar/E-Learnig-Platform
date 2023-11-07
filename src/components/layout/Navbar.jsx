@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
           <li className="dropdown">
             <button className="dropbtn">
-              Engineering
+              Engineering{" "}
               <FontAwesomeIcon icon={faCaretDown} />
             </button>
             <div className="dropdown-content">
@@ -92,18 +92,25 @@ const Navbar = () => {
             {" "}
             <Link to="/blogs">Blog</Link>
           </li>
-          <li>
-            {" "}
-            <Link to={`/dashboard/${dashboard}`}>Dashboard</Link>
-          </li>
-          { !auth?.user ? (
+          {!auth?.user ? (
             <Link to="/login" className="login-link">
               Sign In/Sign Up
             </Link>
-          ): (
-            <Link onClick={handleLogout} className="login-link">
-              Logout
-            </Link>
+          ) : (
+              <li className="dropdown">
+                <button className="dropbtn">
+                  {dashboard} Dashboard{" "}
+                  <FontAwesomeIcon icon={faCaretDown} />
+                </button>
+                <div className="dropdown-content">
+                  <Link to={`/dashboard/${dashboard}`}>
+                    Dashboard
+                  </Link>
+                  <Link onClick={handleLogout}>
+                    Logout
+                  </Link>
+                </div>
+              </li>
           )}
           <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <CloseIcon />
