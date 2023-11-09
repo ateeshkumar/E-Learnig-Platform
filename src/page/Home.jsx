@@ -103,16 +103,17 @@ const Home = () => {
             <div className="ov-right">
               <h1>Overview</h1>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Architecto praesentium, placeat alias vitae quo ullam voluptatem
-                neque? Optio et dolorem accusamus sunt harum illum ea,
-                voluptates a, esse perspiciatis voluptas.
+                Alphapartical platforms are digital spaces that facilitate the
+                delivery of educational content through electronic means. These
+                platforms can be used for formal education (school, university
+                courses) or informal learning (skill development, personal
+                interest).
               </p>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Architecto praesentium, placeat alias vitae quo ullam voluptatem
-                neque? Optio et dolorem accusamus sunt harum illum ea,
-                voluptates a, esse perspiciatis voluptas.
+                Alphapartical continues to evolve, driven by technological advancements and a
+                growing demand for flexible and effective learning solutions.
+                Always stay updated with the latest platforms and trends in this
+                dynamic space.
               </p>
             </div>
           </div>

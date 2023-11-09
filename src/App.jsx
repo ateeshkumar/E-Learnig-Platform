@@ -25,6 +25,8 @@ import AdminProject from './page/admin/AdminProject';
 import AdminCreateProject from './page/admin/AdminCreateProject';
 import CommunityProjectDetails from './page/user/CommunityProjectDetails';
 import GroupProject from './page/user/GroupProject';
+import PlacementQuestion from './page/Blog/PlacementQuestion';
+import PlacementCoding1 from './page/Blog/PlacementCoding1';
 
 
 function App() {
@@ -40,10 +42,21 @@ function App() {
         <Route path="/term-condition" element={<TearmCondition />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/student/community" element={<OurCommunity />} />
+
+        {/* blog pages */}
         <Route
           path="blogs/vs-code-extensions-for-developers"
           element={<VsCodeExtension />}
         />
+        <Route
+          path="blogs/wipro-talent-next-milestone-all-coding-question-cheatsheet"
+          element={<PlacementQuestion />}
+        />
+        <Route
+          path="blogs/placement-coding-question-2023"
+          element={<PlacementCoding1/>}
+        />
+
         <Route path="/courses" element={<Courses />} />
         <Route path="/engineering/project" element={<Project />} />
         <Route path="/:add/:id" element={<LayoutContent />} />
@@ -64,7 +77,7 @@ function App() {
         {/* User Private Route */}
         <Route path="/dashboard" element={<Privateroute />}>
           <Route path="user" element={<UserDashboard />} />
-          <Route path="user/group/:slug" element={<GroupProject/>} />
+          <Route path="user/group/:slug" element={<GroupProject />} />
         </Route>
 
         {/* Admin Private Route  */}
