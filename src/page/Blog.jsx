@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import './css/blog.css';
 import vscode from '../assets/page/vs-code-extension.jpg'
 import placement1 from '../assets/blog/placement-question.jpg';
+import project from '../assets/blog/project.png';
+import eCommerce from '../assets/blog/e-commerce.png';
+import learning from '../assets/blog/elearning-plateform.jpg';
 const Blog = () => {
   return (
     <>
@@ -39,9 +42,40 @@ const Blog = () => {
                 <img src={placement1} alt="Placement Question" />
                 <div className="blog-details-pro">
                   <p>
-                    <b>
-                      Placement Coding Question 2023 Cheatsheet
-                    </b>
+                    <b>Placement Coding Question 2023 Cheatsheet</b>
+                    {/* <p>by Ateesh Kumar</p> */}
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className="blog-details">
+              <Link to="/blogs/top-ptoject-for-placement">
+                <img src={project} alt="Placement Questio" />
+                <div className="blog-details-pro">
+                  <p>
+                    <b>Project For Top Level Placement</b>
+                    {/* <p>by Ateesh Kumar</p> */}
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className="blog-details">
+              <Link to="/blogs/eCommerce-Website-planning-cheatsheet-using-mern-stack">
+                <img src={eCommerce} alt="Placement Questio" />
+                <div className="blog-details-pro">
+                  <p>
+                    <b>e-Commerce Website Planning Using Mern Stack Development Cheatsheet</b>
+                    {/* <p>by Ateesh Kumar</p> */}
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className="blog-details">
+              <Link to="/blogs/eLearning-Platform-planning-cheatsheet-using-mern-stack">
+                <img src={learning} alt="Placement Questio" />
+                <div className="blog-details-pro">
+                  <p>
+                    <b>e-Learning Platform Planning Using Mern Stack Development Cheatsheet</b>
                     {/* <p>by Ateesh Kumar</p> */}
                   </p>
                 </div>

@@ -17,6 +17,9 @@
 .extension-container>img{
     width: 100%;
 }
+.blog-img{
+    width: 100%;
+}
 @media screen and (max-width:1000px){
     .vce-container>img{
         width: 90%;

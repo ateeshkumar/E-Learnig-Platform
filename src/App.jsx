@@ -27,6 +27,9 @@ import CommunityProjectDetails from './page/user/CommunityProjectDetails';
 import GroupProject from './page/user/GroupProject';
 import PlacementQuestion from './page/Blog/PlacementQuestion';
 import PlacementCoding1 from './page/Blog/PlacementCoding1';
+import ProjectForPlacement from './page/Blog/ProjectForPlacement';
+import EcommerceWebsite from './page/Blog/EcommerceWebsite';
+import LearningPlatform from './page/Blog/LearningPlatform';
 
 
 function App() {
@@ -54,8 +57,17 @@ function App() {
         />
         <Route
           path="blogs/placement-coding-question-2023"
-          element={<PlacementCoding1/>}
+          element={<PlacementCoding1 />}
         />
+        <Route
+          path="blogs/top-ptoject-for-placement"
+          element={<ProjectForPlacement />}
+        />
+        <Route
+          path="blogs/eCommerce-Website-planning-cheatsheet-using-mern-stack"
+          element={<EcommerceWebsite />}
+        />
+        <Route path="blogs/eLearning-Platform-planning-cheatsheet-using-mern-stack" element={<LearningPlatform/>}/>
 
         <Route path="/courses" element={<Courses />} />
         <Route path="/engineering/project" element={<Project />} />
