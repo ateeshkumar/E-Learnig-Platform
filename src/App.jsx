@@ -30,6 +30,10 @@ import PlacementCoding1 from './page/Blog/PlacementCoding1';
 import ProjectForPlacement from './page/Blog/ProjectForPlacement';
 import EcommerceWebsite from './page/Blog/EcommerceWebsite';
 import LearningPlatform from './page/Blog/LearningPlatform';
+import JavaScript from './page/Blog/JavaScript';
+import BlogPosting from './page/admin/BlogPosting';
+import JavaScriptTitle from './page/admin/JavaScriptTitle';
+import JavaScriptDescription from './page/admin/JavaScriptDescription';
 
 
 function App() {
@@ -69,6 +73,9 @@ function App() {
         />
         <Route path="blogs/eLearning-Platform-planning-cheatsheet-using-mern-stack" element={<LearningPlatform/>}/>
 
+        <Route path='blogs/java-script-intro' element={<JavaScript/>}/>
+
+
         <Route path="/courses" element={<Courses />} />
         <Route path="/engineering/project" element={<Project />} />
         <Route path="/:add/:id" element={<LayoutContent />} />
@@ -98,7 +105,10 @@ function App() {
           <Route path="admin/all-users" element={<AdminAllUser />} />
           <Route path="admin/project-details" element={<AdminProject />} />
           <Route path="admin/create-project" element={<AdminCreateProject />} />
+          <Route path='admin/create-java-script' element={<JavaScriptTitle/>}/>
+          <Route path='admin/create-java-script/description' element={<JavaScriptDescription/>}/>
         </Route>
+        <Route path='/create-post' element={<BlogPosting/>}/>
       </Routes>
     </>
   );

@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import "./css/project.css";
 import project from "../data/project";
 import { useNavigate, Link } from "react-router-dom";
+import Ads from '../components/GoogleAds/Ads';
 const Project = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const Project = () => {
               </div>
             ))}
           </div>
+          <Ads/>
         </div>
       </Layout>
     </>

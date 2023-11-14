@@ -236,8 +236,9 @@ body.active-modal {
 .gallery-card h3{
     margin: 10px 0;
 }
-.gallery-card p{
+.gallery-card>p{
     color: #fff;
+    padding: 0 20px;
 }
 .course-gallery-arrow{
     position: absolute;

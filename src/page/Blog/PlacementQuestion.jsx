@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../../components/layout/Layout'
 import placement1 from '../../assets/blog/placement-question.jpg'
 import CodeSnippit from '../../components/CodeSnippit';
+import Ads from '../../components/GoogleAds/Ads';
 const PlacementQuestion = () => {
   return (
     <>
@@ -73,6 +74,7 @@ const PlacementQuestion = () => {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>
               Question-2: Find sum of all prime numbers in the array, except the
@@ -166,6 +168,7 @@ const PlacementQuestion = () => {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>
               Question-3: Find sum of all prime numbers in the array, except the
@@ -263,6 +266,7 @@ const PlacementQuestion = () => {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>Question-4: Encoding Three Strings</h3>
             <p>
@@ -348,6 +352,7 @@ const PlacementQuestion = () => {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>Question-5: Find Key</h3>
             <p>
@@ -393,6 +398,7 @@ const PlacementQuestion = () => {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>Question-6: StringConcatenation</h3>
             <p>
@@ -469,6 +475,7 @@ const PlacementQuestion = () => {
             />
             <hr />
           </div>
+          <Ads/>
         </div>
       </Layout>
     </>

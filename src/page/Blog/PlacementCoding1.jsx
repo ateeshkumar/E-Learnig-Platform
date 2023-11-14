@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout/Layout';
 import CodeSnippit from '../../components/CodeSnippit';
 import placement1 from '../../assets/blog/placement-question.jpg';
+import Ads from '../../components/GoogleAds/Ads';
 const PlacementCoding1 = () => {
   return (
     <>
@@ -75,6 +76,7 @@ int main() {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>Question-2:</h3>
             <p>
@@ -140,6 +142,7 @@ int main() {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>Question-3:</h3>
             <p>
@@ -204,6 +207,7 @@ int main() {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>Question-4:</h3>
             <p>
@@ -300,6 +304,7 @@ int main() {
             />
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>Question-5:</h3>
             <p>
@@ -386,6 +391,7 @@ int main() {
             />
             <hr />
           </div>
+          <Ads/>
         </div>
       </Layout>
     </>

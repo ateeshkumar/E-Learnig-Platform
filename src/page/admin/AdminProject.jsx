@@ -56,6 +56,12 @@ const AdminProject = () => {
               >
                 Create Project
               </button>
+              <button
+                className="admin-update-btn"
+                onClick={() => navigate("/dashboard/admin/create-java-script")}
+              >
+                Create JavaScript
+              </button>
             </div>
           </div>
           <div className="admin-detail-section">
@@ -64,8 +70,12 @@ const AdminProject = () => {
                 <span>{item?.title}</span>
                 <span>{item?.lable}</span>
                 <span>{item?.mentor?.name}</span>
-                <button className="admin-project-btn"
-                onClick={()=>deteleProject(item._id)}>Detete</button>
+                <button
+                  className="admin-project-btn"
+                  onClick={() => deteleProject(item._id)}
+                >
+                  Detete
+                </button>
               </div>
             ))}
           </div>

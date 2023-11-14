@@ -80,6 +80,12 @@ const AdminCreateProject = () => {
               >
                 Create Project
               </button>
+              <button
+                className="admin-update-btn"
+                onClick={() => navigate("/dashboard/admin/create-java-script")}
+              >
+                Create JavaScript
+              </button>
             </div>
           </div>
           <div className="admin-detail-section">

@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import avatar from '../../assets/avatar.jpg';
 import './css/groupproject.css'
 import SimpleLoader from '../../components/layout/SimpleLoader';
+import Ads from '../../components/GoogleAds/Ads';
 
 const GroupProject = () => {
     const {slug} = useParams();
@@ -61,7 +62,7 @@ const GroupProject = () => {
             <div className="group-chat-detail"></div>
           </div>
           <div className="bottom-group-project">
-            <h2>Google ad</h2>
+            <Ads/>
           </div>
         </div>
       </Layout>

@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useAuth } from '../../components/context/auth';
 import './css/communityprojectdetails.css';
 import { toast } from 'react-toastify';
+import Ads from '../../components/GoogleAds/Ads';
 
 const CommunityProjectDetails = () => {
   const navigate = useNavigate();
@@ -62,7 +63,7 @@ const CommunityProjectDetails = () => {
         </div>
         <div className="community-details-container-1">
           <div className="community-live-project-1">
-            <h4>Google Ads</h4>
+            <Ads/>
           </div>
           <div className="community-history-project-details-1">
             <div className="community-histrory-project-1">

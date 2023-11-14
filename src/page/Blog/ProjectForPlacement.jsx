@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
 import project from '../../assets/blog/project.png'
+import Ads from '../../components/GoogleAds/Ads';
 const ProjectForPlacement = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const ProjectForPlacement = () => {
             </a>
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>2. Learning Platform</h3>
             <p>
@@ -44,6 +46,7 @@ const ProjectForPlacement = () => {
             </a>
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>3. Portfolio Website</h3>
             <p>Create Website Using React</p>
@@ -58,6 +61,7 @@ const ProjectForPlacement = () => {
             </a>
             <hr />
           </div>
+          <Ads/>
           <div className="extension-container">
             <h3>4. Clone of any Social Media Platform</h3>
             <p>Create Website Using React.</p>

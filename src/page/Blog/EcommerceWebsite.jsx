@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from '../../components/layout/Layout'
-import eCommerce from '../../assets/blog/e-commerce.png'
+import eCommerce from '../../assets/blog/e-commerce.png';
+import AdSense from "react-adsense";
+import GoogleAdsense from "react-adsense-google";
 const EcommerceWebsite = () => {
   return (
     <div>
@@ -17,18 +19,41 @@ const EcommerceWebsite = () => {
               consideration and a well-thought-out approach. Here's a
               step-by-step guide to help you get started:
             </p>
+            <GoogleAdsense
+              adClient="ca-pub-2362928845053762"
+              adSlot="4263734597"
+              style={{ display: "block", "text-align": "center" }}
+              adLayout="in-article"
+              adFormat="fluid"
+              fullWidthResponsive="true"
+            />
             <h3>Project Scope and Goals:</h3>
             <p>
               Define the purpose, goals, and scope of your e-commerce website.
               Determine what products or services you'll be selling, your target
               audience, and your unique selling points.
             </p>
+            <AdSense.Google
+              client="ca-pub-2362928845053762"
+              slot="4263734597"
+              style={{ display: "block" }}
+              layout="in-article"
+              format="fluid"
+            />
+
             <h3>Technology Stack:</h3>
             <p>
               You've already chosen the MERN stack, but decide on other
               technologies and tools you'll need, like payment gateways,
               analytics, and server hosting.
             </p>
+            <AdSense.Google
+              client="ca-pub-2362928845053762"
+              slot="4263734597"
+              style={{ display: "block" }}
+              layout="in-article"
+              format="fluid"
+            />
             <h3>Wireframing and Design:</h3>
             <p>
               Create wireframes and design prototypes for your website. Consider
@@ -40,6 +65,13 @@ const EcommerceWebsite = () => {
               Plan the structure of your MongoDB database, considering product
               catalog, user profiles, order history, and other relevant data.
             </p>
+            <AdSense.Google
+              client="ca-pub-2362928845053762"
+              slot="4263734597"
+              style={{ display: "block" }}
+              layout="in-article"
+              format="fluid"
+            />
             <h3>Backend Development (Node.js and Express):</h3>
             <p>
               Develop the server-side components, including authentication,
@@ -52,6 +84,13 @@ const EcommerceWebsite = () => {
               user registration and login, shopping cart, and checkout
               processes. Ensure your website is responsive and mobile-friendly.
             </p>
+            <AdSense.Google
+              client="ca-pub-2362928845053762"
+              slot="4263734597"
+              style={{ display: "block" }}
+              layout="in-article"
+              format="fluid"
+            />
             <h3>User Authentication:</h3>
             <p>
               Implement user authentication and authorization mechanisms to
@@ -69,6 +108,13 @@ const EcommerceWebsite = () => {
               products they're looking for. Consider using tools like
               Elasticsearch for advanced search functionality.
             </p>
+            <AdSense.Google
+              client="ca-pub-2362928845053762"
+              slot="4263734597"
+              style={{ display: "block" }}
+              layout="in-article"
+              format="fluid"
+            />
             <h3>Product Management:</h3>
             <p>
               Create an admin panel to manage products, categories, and other
@@ -79,6 +125,13 @@ const EcommerceWebsite = () => {
               Develop a smooth and user-friendly shopping cart and checkout
               process, ensuring security and payment processing are robust.
             </p>
+            <AdSense.Google
+              client="ca-pub-2362928845053762"
+              slot="4263734597"
+              style={{ display: "block" }}
+              layout="in-article"
+              format="fluid"
+            />
             <h3>Reviews and Ratings:</h3>
             <p>
               Allow customers to leave reviews and ratings for products to build

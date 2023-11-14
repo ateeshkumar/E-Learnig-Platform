@@ -7,6 +7,8 @@ import placement1 from '../assets/blog/placement-question.jpg';
 import project from '../assets/blog/project.png';
 import eCommerce from '../assets/blog/e-commerce.png';
 import learning from '../assets/blog/elearning-plateform.jpg';
+import Ads from '../components/GoogleAds/Ads';
+import javaScript from '../assets/blog/What-JavaScript.jpg';
 const Blog = () => {
   return (
     <>
@@ -38,6 +40,9 @@ const Blog = () => {
               </Link>
             </div>
             <div className="blog-details">
+              <Ads />
+            </div>
+            <div className="blog-details">
               <Link to="/blogs/placement-coding-question-2023">
                 <img src={placement1} alt="Placement Question" />
                 <div className="blog-details-pro">
@@ -64,7 +69,10 @@ const Blog = () => {
                 <img src={eCommerce} alt="Placement Questio" />
                 <div className="blog-details-pro">
                   <p>
-                    <b>e-Commerce Website Planning Using Mern Stack Development Cheatsheet</b>
+                    <b>
+                      e-Commerce Website Planning Using Mern Stack Development
+                      Cheatsheet
+                    </b>
                     {/* <p>by Ateesh Kumar</p> */}
                   </p>
                 </div>
@@ -75,7 +83,23 @@ const Blog = () => {
                 <img src={learning} alt="Placement Questio" />
                 <div className="blog-details-pro">
                   <p>
-                    <b>e-Learning Platform Planning Using Mern Stack Development Cheatsheet</b>
+                    <b>
+                      e-Learning Platform Planning Using Mern Stack Development
+                      Cheatsheet
+                    </b>
+                    {/* <p>by Ateesh Kumar</p> */}
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className="blog-details">
+              <Link to="/blogs/java-script-intro">
+                <img src={javaScript} alt="Java Script" />
+                <div className="blog-details-pro">
+                  <p>
+                    <b>
+                      Java Script Full Tutorials
+                    </b>
                     {/* <p>by Ateesh Kumar</p> */}
                   </p>
                 </div>

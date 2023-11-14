@@ -15,7 +15,6 @@ import oyo from "../assets/oyo.png";
 import amazon from "../assets/amazon.png";
 import categories from "../data/chooseus";
 import cirtification from "../data/certification";
-import { FaCode } from "react-icons/fa";
 import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
 import chooseus from "../data/chooseus";
 import courses from "../data/courses";
@@ -33,6 +32,7 @@ const Home = () => {
      hp,
      oyo,
    ];
+   
    const [curriculum, setCurriculum] = useState(categories);
    const [curr, setCurr] = useState("categories");
    const [iconpending, setIconPending] = useState(true);
@@ -117,6 +117,7 @@ const Home = () => {
               </p>
             </div>
           </div>
+          
           <div className="courses">
             <h1>Our Courses</h1>
             <div className="course-gallery-con" ref={scrollRef}>
@@ -150,6 +151,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+          
           <div className="curriculum">
             <div className="inner-curriculum">
               <div className="cu-upper">
@@ -207,7 +209,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-
+         
           <div className="companies">
             <div className="comp-left">
               {image.map((item) => (
@@ -226,7 +228,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-
+               
           <div className="whychoosus">
             <h1>
               Why <h2>Choose Us</h2>

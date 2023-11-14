@@ -46,19 +46,23 @@ const AdminAllUser = () => {
               >
                 Create Project
               </button>
+              <button
+                className="admin-update-btn"
+                onClick={() => navigate("/dashboard/admin/create-java-script")}
+              >
+                Create JavaScript
+              </button>
             </div>
           </div>
           <div className="admin-detail-section">
             {/* <div className="admin-details-section-container"> */}
-              {
-                alluser.map((item)=>(
-                  <div className="admin-user-details">
-                    <p>{item?.name}</p>
-                    <p>{item?.email}</p>
-                    <p>{item?.gender}</p>
-                  </div>
-                ))
-              }
+            {alluser.map((item) => (
+              <div className="admin-user-details">
+                <p>{item?.name}</p>
+                <p>{item?.email}</p>
+                <p>{item?.gender}</p>
+              </div>
+            ))}
             {/* </div> */}
           </div>
         </div>

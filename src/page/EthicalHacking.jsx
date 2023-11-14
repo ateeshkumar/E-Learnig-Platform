@@ -5,6 +5,7 @@ import ethicalHacking from "../data/ethicalHacking";
 import { useNavigate, useParams } from "react-router-dom";
 import img from "../assets/Ethicalhacking.jpg";
 import VideoPlayer from '../components/layout/VideoPlayer';
+import Ads from '../components/GoogleAds/Ads';
 const EthicalHacking = () => {
      const naviagte = useNavigate();
      const { id } = useParams();
@@ -28,6 +29,7 @@ const EthicalHacking = () => {
               <h2>Description</h2>
               <div className="video-desc-con">
                 <h3>{result.title}</h3>
+                <Ads/>
               </div>
             </div>
           </div>

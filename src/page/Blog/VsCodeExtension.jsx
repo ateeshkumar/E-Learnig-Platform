@@ -15,6 +15,7 @@ import peacock from '../../assets/page/peacock.png'
 import outputcolorizer from '../../assets/page/output-colorizer.png'
 import beatify from '../../assets/page/beautify.png'
 import CodeSnippit from '../../components/CodeSnippit';
+import Ads from '../../components/GoogleAds/Ads';
 const VsCodeExtension = () => {
   return (
     <>
@@ -49,6 +50,7 @@ const VsCodeExtension = () => {
 
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>2. Prettier</h3>
             <p>
@@ -69,6 +71,7 @@ const VsCodeExtension = () => {
 
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>3. Intent Rainbow</h3>
             <p>
@@ -89,6 +92,7 @@ const VsCodeExtension = () => {
 
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>4. Code Runner</h3>
             <p>
@@ -114,6 +118,7 @@ const VsCodeExtension = () => {
             <p>5. Support REPL by running code in Integrated Terminal</p>
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>5. Better Comments</h3>
             <p>
@@ -134,6 +139,7 @@ const VsCodeExtension = () => {
 
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>6. Auto Close Tag</h3>
             <p>
@@ -166,6 +172,7 @@ const VsCodeExtension = () => {
             </p>
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>7. Bracket Pair Color DLW</h3>
             <p>
@@ -185,6 +192,7 @@ const VsCodeExtension = () => {
 
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>9. Beautify</h3>
             <p>
@@ -205,6 +213,7 @@ const VsCodeExtension = () => {
 
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>10. Peacock</h3>
             <p>
@@ -226,6 +235,7 @@ const VsCodeExtension = () => {
 
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>11. Output Colorizer</h3>
             <p>
@@ -264,6 +274,7 @@ const VsCodeExtension = () => {
             />
             <hr />
           </div>
+          <Ads />
           <div className="extension-container">
             <h3>12. Helium</h3>
             <p>
@@ -282,6 +293,7 @@ const VsCodeExtension = () => {
             <img src={hilium} alt="Helium" />
             <hr />
           </div>
+          <Ads />
         </div>
       </Layout>
     </>

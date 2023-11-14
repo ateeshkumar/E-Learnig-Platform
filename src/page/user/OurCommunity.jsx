@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { useNavigate} from 'react-router-dom';
 import { useAuth } from '../../components/context/auth';
 import SimpleLoader from '../../components/layout/SimpleLoader';
+import Ads from '../../components/GoogleAds/Ads';
 
 const OurCommunity = () => {
   const [projects,setProjects] = useState([]);
@@ -49,7 +50,7 @@ const OurCommunity = () => {
         </div>
         <div className="community-details-container">
           <div className="community-live-project">
-            <h5>Google ads</h5>
+            <Ads/>
           </div>
           <div className="community-history-project-details">
             {projects && projects.length > 0 ? (
