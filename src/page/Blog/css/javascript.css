@@ -1,0 +1,28 @@
+.java-script-container{
+    width: 50%;
+    text-align: left;
+    margin: auto;
+    font-size: 25px;
+}
+.java-script-container>h1{
+    font-size: 40px;
+}
+.java-script-container>h3{
+    font-size: 30px;
+}
+.javascript-card>a{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+.javascript-card>a::after{
+    /* text-decoration: none;
+    font-size: 25px;
+    font-weight: 700; */
+    color: blue;
+}
+.javascript-card{
+    display: flex;
+    flex-direction: column;
+}
+

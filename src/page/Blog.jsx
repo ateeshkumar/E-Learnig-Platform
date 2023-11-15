@@ -93,7 +93,7 @@ const Blog = () => {
               </Link>
             </div>
             <div className="blog-details">
-              <Link to="/blogs/java-script-intro">
+              <Link to="/blogs/java-script-tutorial">
                 <img src={javaScript} alt="Java Script" />
                 <div className="blog-details-pro">
                   <p>

@@ -1,0 +1,14 @@
+.js-container{
+    width: 50%;
+    text-align: left;
+    margin: 20px auto;
+    font-size: 20px;
+    /* margin: 0 20px; */
+    /* background: #ededed; */
+}
+.js-container>img{
+    width: 100%;
+}
+.js-card h1{
+    font-size: 35px;
+}

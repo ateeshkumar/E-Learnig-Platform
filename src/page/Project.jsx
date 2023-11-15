@@ -5,6 +5,7 @@ import project from "../data/project";
 import { useNavigate, Link } from "react-router-dom";
 import Ads from '../components/GoogleAds/Ads';
 const Project = () => {
+  
   return (
     <>
       <Layout title="All Project">

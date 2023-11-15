@@ -34,6 +34,7 @@ import JavaScript from './page/Blog/JavaScript';
 import BlogPosting from './page/admin/BlogPosting';
 import JavaScriptTitle from './page/admin/JavaScriptTitle';
 import JavaScriptDescription from './page/admin/JavaScriptDescription';
+import JavaScriptDetails from './page/Blog/JavaScriptDetails';
 
 
 function App() {
@@ -73,7 +74,8 @@ function App() {
         />
         <Route path="blogs/eLearning-Platform-planning-cheatsheet-using-mern-stack" element={<LearningPlatform/>}/>
 
-        <Route path='blogs/java-script-intro' element={<JavaScript/>}/>
+        <Route path='blogs/java-script-tutorial' element={<JavaScript/>}/>
+        <Route path='blogs/java-script-tutorial/:slug' element={<JavaScriptDetails/>}/>
 
 
         <Route path="/courses" element={<Courses />} />

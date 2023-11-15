@@ -13,7 +13,7 @@ import Ads from '../../components/GoogleAds/Ads';
 const OurCommunity = () => {
   const [projects,setProjects] = useState([]);
   const [auth,setAuth] = useAuth();
- 
+  const [count,setCount] = useState(3)
   const navigate = useNavigate();
   const getProject=async()=>{
     const { data } = await axios.get(
@@ -50,7 +50,9 @@ const OurCommunity = () => {
         </div>
         <div className="community-details-container">
           <div className="community-live-project">
-            <Ads/>
+           
+              <Ads />
+            
           </div>
           <div className="community-history-project-details">
             {projects && projects.length > 0 ? (

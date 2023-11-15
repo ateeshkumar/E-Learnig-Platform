@@ -2,7 +2,6 @@ import React, { useEffect, useState} from 'react';
 import axios  from 'axios';
 import './css/midle.css';
 import CodeSnippit from '../CodeSnippit';
-import Horgontle from '../GoogleAds/Horgontle';
 import Loader from '../layout/Loader';
 import SimpleLoader from '../layout/SimpleLoader';
 

@@ -1,7 +1,22 @@
-import React from 'react'
-import Layout from '../../components/layout/Layout'
+import React, { useState } from 'react';
+import Layout from '../../components/layout/Layout';
+import axios from 'axios';
+import { useEffect } from 'react';
+import './css/javascript.css';
 
 const JavaScript = () => {
+  const [javascript,setJavascript] = useState([]);
+  const getJavaScript =async()=>{
+    const { data } = await axios.get(
+      "https://alphapartical-api-v2-l7kz.onrender.com/api/v1/content/get-jevascript-title"
+    );
+    if(data?.success){
+      setJavascript(data?.javascript)
+    }
+  }
+  useEffect(()=>{
+    getJavaScript();
+  },[]); 
   return (
     <>
       <Layout title="Java-Script">
@@ -21,8 +36,14 @@ const JavaScript = () => {
             Node.js.
           </p>
           <h3>Topics Cover in Letest Java Script Version</h3>
-          <a href="">Let, Const and Var</a>
-
+          {javascript &&
+            javascript.map((item) => (
+              <div className="javascript-card">
+                <a href={`/blogs/java-script-tutorial/${item?.slug}`}>
+                  {item.title}
+                </a>
+              </div>
+            ))}
         </div>
       </Layout>
     </>
