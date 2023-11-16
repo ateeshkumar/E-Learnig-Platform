@@ -7,7 +7,7 @@ import { useEffect } from 'react';
 import CodeSnippit from '../../components/CodeSnippit';
 import './css/javascriptdetails.css';
 import javascript from '../../assets/blog/What-JavaScript.jpg';
-import Ads from '../../components/GoogleAds/Ads'
+import Ads from '../../components/GoogleAds/Ads';
 const JavaScriptDetails = () => {
     const {slug} = useParams();
     const [details,setDetails] = useState([]);

@@ -9,6 +9,7 @@ import eCommerce from '../assets/blog/e-commerce.png';
 import learning from '../assets/blog/elearning-plateform.jpg';
 import Ads from '../components/GoogleAds/Ads';
 import javaScript from '../assets/blog/What-JavaScript.jpg';
+import scapeFromTarkev from '../assets/blog/escape-from-tarkov.jpg'
 const Blog = () => {
   return (
     <>
@@ -65,6 +66,9 @@ const Blog = () => {
               </Link>
             </div>
             <div className="blog-details">
+              <Ads />
+            </div>
+            <div className="blog-details">
               <Link to="/blogs/eCommerce-Website-planning-cheatsheet-using-mern-stack">
                 <img src={eCommerce} alt="Placement Questio" />
                 <div className="blog-details-pro">
@@ -93,13 +97,25 @@ const Blog = () => {
               </Link>
             </div>
             <div className="blog-details">
+              <Ads />
+            </div>
+            <div className="blog-details">
               <Link to="/blogs/java-script-tutorial">
                 <img src={javaScript} alt="Java Script" />
                 <div className="blog-details-pro">
                   <p>
-                    <b>
-                      Java Script Full Tutorials
-                    </b>
+                    <b>Java Script Full Tutorials</b>
+                    {/* <p>by Ateesh Kumar</p> */}
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className="blog-details">
+              <Link to="/blogs/escape-from-tarkov">
+                <img src={scapeFromTarkev} alt="Java Script" />
+                <div className="blog-details-pro">
+                  <p>
+                    <b>Escape From Tarkov Game</b>
                     {/* <p>by Ateesh Kumar</p> */}
                   </p>
                 </div>

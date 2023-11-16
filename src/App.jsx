@@ -35,6 +35,7 @@ import BlogPosting from './page/admin/BlogPosting';
 import JavaScriptTitle from './page/admin/JavaScriptTitle';
 import JavaScriptDescription from './page/admin/JavaScriptDescription';
 import JavaScriptDetails from './page/Blog/JavaScriptDetails';
+import EscapeFromTarkov from './page/Blog/EscapeFromTarkov';
 
 
 function App() {
@@ -68,15 +69,21 @@ function App() {
           path="blogs/top-ptoject-for-placement"
           element={<ProjectForPlacement />}
         />
+        <Route path="blogs/escape-from-tarkov" element={<EscapeFromTarkov/>}/>
         <Route
           path="blogs/eCommerce-Website-planning-cheatsheet-using-mern-stack"
           element={<EcommerceWebsite />}
         />
-        <Route path="blogs/eLearning-Platform-planning-cheatsheet-using-mern-stack" element={<LearningPlatform/>}/>
+        <Route
+          path="blogs/eLearning-Platform-planning-cheatsheet-using-mern-stack"
+          element={<LearningPlatform />}
+        />
 
-        <Route path='blogs/java-script-tutorial' element={<JavaScript/>}/>
-        <Route path='blogs/java-script-tutorial/:slug' element={<JavaScriptDetails/>}/>
-
+        <Route path="blogs/java-script-tutorial" element={<JavaScript />} />
+        <Route
+          path="blogs/java-script-tutorial/:slug"
+          element={<JavaScriptDetails />}
+        />
 
         <Route path="/courses" element={<Courses />} />
         <Route path="/engineering/project" element={<Project />} />
@@ -107,10 +114,16 @@ function App() {
           <Route path="admin/all-users" element={<AdminAllUser />} />
           <Route path="admin/project-details" element={<AdminProject />} />
           <Route path="admin/create-project" element={<AdminCreateProject />} />
-          <Route path='admin/create-java-script' element={<JavaScriptTitle/>}/>
-          <Route path='admin/create-java-script/description' element={<JavaScriptDescription/>}/>
+          <Route
+            path="admin/create-java-script"
+            element={<JavaScriptTitle />}
+          />
+          <Route
+            path="admin/create-java-script/description"
+            element={<JavaScriptDescription />}
+          />
         </Route>
-        <Route path='/create-post' element={<BlogPosting/>}/>
+        <Route path="/create-post" element={<BlogPosting />} />
       </Routes>
     </>
   );
