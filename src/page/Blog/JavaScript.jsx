@@ -3,6 +3,7 @@ import Layout from '../../components/layout/Layout';
 import axios from 'axios';
 import { useEffect } from 'react';
 import './css/javascript.css';
+import CircleLoader from '../../components/layout/CircleLoader';
 
 const JavaScript = () => {
   const [javascript,setJavascript] = useState([]);
@@ -36,14 +37,14 @@ const JavaScript = () => {
             Node.js.
           </p>
           <h3>Topics Cover in Letest Java Script Version</h3>
-          {javascript &&
+          {javascript && javascript.length>0 ?
             javascript.map((item) => (
               <div className="javascript-card">
                 <a href={`/blogs/java-script-tutorial/${item?.slug}`}>
                   {item.title}
                 </a>
               </div>
-            ))}
+            )):<CircleLoader/>}
         </div>
       </Layout>
     </>

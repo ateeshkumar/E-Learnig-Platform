@@ -36,6 +36,7 @@ import JavaScriptTitle from './page/admin/JavaScriptTitle';
 import JavaScriptDescription from './page/admin/JavaScriptDescription';
 import JavaScriptDetails from './page/Blog/JavaScriptDetails';
 import EscapeFromTarkov from './page/Blog/EscapeFromTarkov';
+import JavaScriptInterviewQuestion from './page/Blog/JavaScriptInterviewQuestion';
 
 
 function App() {
@@ -69,7 +70,7 @@ function App() {
           path="blogs/top-ptoject-for-placement"
           element={<ProjectForPlacement />}
         />
-        <Route path="blogs/escape-from-tarkov" element={<EscapeFromTarkov/>}/>
+        <Route path="blogs/escape-from-tarkov" element={<EscapeFromTarkov />} />
         <Route
           path="blogs/eCommerce-Website-planning-cheatsheet-using-mern-stack"
           element={<EcommerceWebsite />}
@@ -84,6 +85,8 @@ function App() {
           path="blogs/java-script-tutorial/:slug"
           element={<JavaScriptDetails />}
         />
+        <Route path="blogs/javascript-interview-prepration-question-basic-to-advance"
+        element={<JavaScriptInterviewQuestion/>}/>
 
         <Route path="/courses" element={<Courses />} />
         <Route path="/engineering/project" element={<Project />} />

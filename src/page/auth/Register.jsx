@@ -5,6 +5,7 @@ import { Box, Typography, TextField, Button } from "@mui/material";
 import axios from "axios";
 import { toast } from "react-toastify";
 import logo from "../../assets/logo.png";
+import Layout from "../../components/layout/Layout";
 const Register = () => {
     const navigate = useNavigate();
     const [input, setinput] = useState({
@@ -52,33 +53,33 @@ const Register = () => {
     });
   return (
     <>
-      <div className="auth-container">
-        <img src={logo} alt="Logo" />
+      <Layout title='register'>
+        <div className="auth-container">
+          <img src={logo} alt="Logo" />
 
-        <form onSubmit={handleSubmit}>
-          <Box
-            maxWidth={450}
-            display={"flex"}
-            flexDirection={"column"}
-            alignItems={"center"}
-            justifyContent={"center"}
-            margin={"auto"}
-            style={{ background: "#fff" }}
-            // marginTop={5}
-            boxShadow="10px 10px 20px #ccc"
-            padding={3}
-            borderRadius={5}
-          >
-            <Typography
-              variant="h4"
-              sx={{ textTransform: "upperCase" }}
+          <form onSubmit={handleSubmit}>
+            <Box
+              maxWidth={450}
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              margin={"auto"}
+              style={{ background: "#fff" }}
+              // marginTop={5}
+              boxShadow="10px 10px 20px #ccc"
               padding={3}
-              textAlign={"center"}
-
+              borderRadius={5}
             >
-              Register
-            </Typography>
-            
+              <Typography
+                variant="h4"
+                sx={{ textTransform: "upperCase" }}
+                padding={3}
+                textAlign={"center"}
+              >
+                Register
+              </Typography>
+
               <TextField
                 placeholder="Name"
                 name="name"
@@ -95,56 +96,57 @@ const Register = () => {
                 type="email"
                 onChange={handleChange}
               />
-            <TextField
-              placeholder="Phone No + Country Code"
-              name="phone"
-              value={input.phone}
-              margin="normal"
-              type="phone"
-              onChange={handleChange}
-            />
-            <TextField
-              placeholder="Gender"
-              name="gender"
-              value={input.gender}
-              margin="normal"
-              type="gender"
-              onChange={handleChange}
-            />
-            <TextField
-              placeholder="College Name"
-              name="college"
-              value={input.college}
-              margin="normal"
-              type="college"
-              onChange={handleChange}
-            />
-            <TextField
-              placeholder="Password"
-              name="password"
-              value={input.password}
-              margin="normal"
-              type="password"
-              onChange={handleChange}
-            />
+              <TextField
+                placeholder="Phone No + Country Code"
+                name="phone"
+                value={input.phone}
+                margin="normal"
+                type="phone"
+                onChange={handleChange}
+              />
+              <TextField
+                placeholder="Gender"
+                name="gender"
+                value={input.gender}
+                margin="normal"
+                type="gender"
+                onChange={handleChange}
+              />
+              <TextField
+                placeholder="College Name"
+                name="college"
+                value={input.college}
+                margin="normal"
+                type="college"
+                onChange={handleChange}
+              />
+              <TextField
+                placeholder="Password"
+                name="password"
+                value={input.password}
+                margin="normal"
+                type="password"
+                onChange={handleChange}
+              />
 
-            <Button
-              type="submit"
-              sx={{ borderRadius: 3, marginTop: 3 }}
-              variant="contained"
-              color="primary"
-            >
-              Submit
-            </Button>
-            <Button
-              sx={{ borderRadius: 3, marginTop: 3 }}
-              onClick={() => navigate("/login")}
-            >
-              Already Registerd ? please login
-            </Button>
-          </Box>
-        </form>
-      </div>
+              <Button
+                type="submit"
+                sx={{ borderRadius: 3, marginTop: 3 }}
+                variant="contained"
+                color="primary"
+              >
+                Submit
+              </Button>
+              <Button
+                sx={{ borderRadius: 3, marginTop: 3 }}
+                onClick={() => navigate("/login")}
+              >
+                Already Registerd ? please login
+              </Button>
+            </Box>
+          </form>
+        </div>
+      </Layout>
     </>
   );
 }

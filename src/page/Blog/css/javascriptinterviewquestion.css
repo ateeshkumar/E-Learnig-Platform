@@ -1,0 +1,23 @@
+.jsi-container{
+    /* background: #cccccc; */
+    
+
+}
+.jsi-right{
+    background: #fff;
+    color: black;
+    width: 50%;
+    margin: 20px auto;
+}
+.jsi-img{
+    width: 100%;
+}
+.jsi-card{
+    font-size: 25px;
+}
+.jsi-card-list{
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}

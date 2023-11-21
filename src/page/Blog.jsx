@@ -9,7 +9,8 @@ import eCommerce from '../assets/blog/e-commerce.png';
 import learning from '../assets/blog/elearning-plateform.jpg';
 import Ads from '../components/GoogleAds/Ads';
 import javaScript from '../assets/blog/What-JavaScript.jpg';
-import scapeFromTarkev from '../assets/blog/escape-from-tarkov.jpg'
+import scapeFromTarkev from '../assets/blog/escape-from-tarkov.jpg';
+import js from '../assets/JavaScript.jpg'
 const Blog = () => {
   return (
     <>
@@ -116,6 +117,17 @@ const Blog = () => {
                 <div className="blog-details-pro">
                   <p>
                     <b>Escape From Tarkov Game</b>
+                    {/* <p>by Ateesh Kumar</p> */}
+                  </p>
+                </div>
+              </Link>
+            </div>
+            <div className="blog-details">
+              <Link to="/blogs/javascript-interview-prepration-question-basic-to-advance">
+                <img src={js} alt="Java Script" />
+                <div className="blog-details-pro">
+                  <p>
+                    <b>Java Script Interview Question Basic to Advance</b>
                     {/* <p>by Ateesh Kumar</p> */}
                   </p>
                 </div>

@@ -8,6 +8,7 @@ import CodeSnippit from '../../components/CodeSnippit';
 import './css/javascriptdetails.css';
 import javascript from '../../assets/blog/What-JavaScript.jpg';
 import Ads from '../../components/GoogleAds/Ads';
+import CircleLoader from '../../components/layout/CircleLoader';
 const JavaScriptDetails = () => {
     const {slug} = useParams();
     const [details,setDetails] = useState([]);
@@ -29,14 +30,14 @@ const JavaScriptDetails = () => {
             <h1>Java Script Tutorial</h1>
             <img src={javascript} alt="JavaScript" />
             {
-                details && details.map((item)=>(
+                details && details.length>0 ? details.map((item)=>(
                     <div className="js-card">
                         <h1>{item.heading}</h1>
                         <p>{item.paragraph}</p>
                         {item.code && <CodeSnippit type='javascript' code={item.code}/>}
                         <Ads/>
                     </div>
-                ))
+                )):<CircleLoader/>
             }
         </div>
       </Layout>

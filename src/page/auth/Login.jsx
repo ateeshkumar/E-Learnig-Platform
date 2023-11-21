@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useAuth } from '../../components/context/auth';
 import { toast } from 'react-toastify';
 import logo from '../../assets/logo.png'
+import Layout from '../../components/layout/Layout';
 const Login = () => {
     const navigate = useNavigate();
     const location = useLocation();
@@ -53,63 +54,65 @@ const Login = () => {
     });
   return (
     <>
-      <div className="auth-container">
-        <img src={logo} alt="Logo"/>
-        <form onSubmit={handleSubmit}>
-          <Box
-            maxWidth={600}
-            display={"flex"}
-            flexDirection={"column"}
-            alignItems={"center"}
-            justifyContent={"center"}
-            margin={"auto"}
-            marginTop={5}
-            style={{background:'#fff'}}
-            boxShadow="10px 10px 20px #ccc"
-            padding={3}
-            borderRadius={5}
-          >
-            <Typography
-              variant="h4"
-              sx={{ textTransform: "upperCase" }}
+      <Layout title='login'>
+        <div className="auth-container">
+          <img src={logo} alt="Logo" />
+          <form onSubmit={handleSubmit}>
+            <Box
+              maxWidth={600}
+              display={"flex"}
+              flexDirection={"column"}
+              alignItems={"center"}
+              justifyContent={"center"}
+              margin={"auto"}
+              marginTop={5}
+              style={{ background: "#fff" }}
+              boxShadow="10px 10px 20px #ccc"
               padding={3}
-              textAlign={"center"}
+              borderRadius={5}
             >
-              Login
-            </Typography>
-            <TextField
-              placeholder="Email"
-              name="email"
-              value={input.email}
-              margin="normal"
-              type="email"
-              onChange={handleChange}
-            />
-            <TextField
-              placeholder="Password"
-              name="password"
-              value={input.password}
-              margin="normal"
-              type="password"
-              onChange={handleChange}
-            />
-            <Button
-              type="submit"
-              sx={{ borderRadius: 3, marginTop: 3 }}
-              variant="contained"
-              color="primary"
-            >
-              Submit
-            </Button>
-            <Button
-              sx={{ borderRadius: 3, marginTop: 3 }}
-              onClick={() => navigate("/register")}
-            >
-              Not a user ? please Register
-            </Button>
-          </Box>
-        </form>
-      </div>
+              <Typography
+                variant="h4"
+                sx={{ textTransform: "upperCase" }}
+                padding={3}
+                textAlign={"center"}
+              >
+                Login
+              </Typography>
+              <TextField
+                placeholder="Email"
+                name="email"
+                value={input.email}
+                margin="normal"
+                type="email"
+                onChange={handleChange}
+              />
+              <TextField
+                placeholder="Password"
+                name="password"
+                value={input.password}
+                margin="normal"
+                type="password"
+                onChange={handleChange}
+              />
+              <Button
+                type="submit"
+                sx={{ borderRadius: 3, marginTop: 3 }}
+                variant="contained"
+                color="primary"
+              >
+                Submit
+              </Button>
+              <Button
+                sx={{ borderRadius: 3, marginTop: 3 }}
+                onClick={() => navigate("/register")}
+              >
+                Not a user ? please Register
+              </Button>
+            </Box>
+          </form>
+        </div>
+      </Layout>
     </>
   );
 }

@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useAuth } from '../../components/context/auth';
 import './css/communityprojectdetails.css';
 import { toast } from 'react-toastify';
+import Ads from '../../components/GoogleAds/Ads';
 
 const CommunityProjectDetails = () => {
   const navigate = useNavigate();
