@@ -24,7 +24,7 @@ const Navbar = () => {
       navigate("/login");
     };
     const showNavbar = () => {
-      navref.current.classList.toggle("responsive_nav");
+      navref.current.classList.toggle("active");
     };
     useEffect(()=>{
       if(auth?.user?.role===1){
@@ -34,19 +34,18 @@ const Navbar = () => {
       }
     })
   return (
-    <>
-      <div className="nav-container">
-        <div className="left-nav">
-          <img src={logo} alt="Logo" onClick={() => navigate("/")} />
-        </div>
-        <ul className="nav-list" ref={navref}>
+    <div className="header-nav" ref={navref}>
+      <div className="left-nav">
+        <img src={logo} alt="Logo" onClick={() => navigate("/")} />
+      </div>
+      <navbar className="nav-container ">
+        <ul className="nav-list ">
           <li>
             <Link to="/">Home</Link>
           </li>
           <li className="dropdown">
             <button className="dropbtn">
-              Engineering{" "}
-              <FontAwesomeIcon icon={faCaretDown} />
+              Engineering <FontAwesomeIcon icon={faCaretDown} />
             </button>
             <div className="dropdown-content">
               <Link to="/html/6526abc3d2b8db051837a443">HTML</Link>
@@ -97,30 +96,27 @@ const Navbar = () => {
               Sign In/Sign Up
             </Link>
           ) : (
-              <li className="dropdown">
-                <button className="dropbtn">
-                  {dashboard} Dashboard{" "}
-                  <FontAwesomeIcon icon={faCaretDown} />
-                </button>
-                <div className="dropdown-content">
-                  <Link to={`/dashboard/${dashboard}`}>
-                    Dashboard
-                  </Link>
-                  <Link onClick={handleLogout}>
-                    Logout
-                  </Link>
-                </div>
-              </li>
+            <li className="dropdown">
+              <button className="dropbtn">
+                {dashboard} Dashboard <FontAwesomeIcon icon={faCaretDown} />
+              </button>
+              <div className="dropdown-content">
+                <Link to={`/dashboard/${dashboard}`}>Dashboard</Link>
+                <Link onClick={handleLogout}>Logout</Link>
+              </div>
+            </li>
           )}
-          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-            <CloseIcon />
-          </button>
         </ul>
-        <button className="nav-btn" onClick={showNavbar}>
+      </navbar>
+      <div className="mobile-nav-btn">
+        <div className="nav-close-btn" onClick={showNavbar}>
+          <CloseIcon />
+        </div>
+        <div className="nav-open-btn " onClick={showNavbar}>
           <MenuIcon />
-        </button>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
