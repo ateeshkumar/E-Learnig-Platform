@@ -89,6 +89,10 @@ const Navbar = () => {
           </li>
           <li>
             {" "}
+            <Link to="/to-do">TO-DO</Link>
+          </li>
+          <li>
+            {" "}
             <Link to="/blogs">Blog</Link>
           </li>
           {!auth?.user ? (

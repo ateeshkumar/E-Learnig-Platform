@@ -37,6 +37,7 @@ import JavaScriptDescription from './page/admin/JavaScriptDescription';
 import JavaScriptDetails from './page/Blog/JavaScriptDetails';
 import EscapeFromTarkov from './page/Blog/EscapeFromTarkov';
 import JavaScriptInterviewQuestion from './page/Blog/JavaScriptInterviewQuestion';
+import ToDo from './page/ToDo';
 
 
 function App() {
@@ -110,6 +111,12 @@ function App() {
           <Route path="user" element={<UserDashboard />} />
           <Route path="user/group/:slug" element={<GroupProject />} />
         </Route>
+
+        {/* to-do */}
+        <Route path='/to-do' element={<ToDo/>}/>
+
+
+
 
         {/* Admin Private Route  */}
         <Route path="/dashboard" element={<AdminRoute />}>
