@@ -22,6 +22,7 @@
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.16",
     "@pkasila/react-adsense": "^1.0.2",
+    "@reduxjs/toolkit": "^2.0.1",
     "axios": "^1.6.0",
     "font-awesome-icons": "^1.6.0",
     "moment": "^2.29.4",

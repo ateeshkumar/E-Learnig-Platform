@@ -1,0 +1,20 @@
+.taks-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-form>form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+input[type='submit']{
+    cursor: pointer;
+}
